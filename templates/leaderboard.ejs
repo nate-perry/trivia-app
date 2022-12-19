@@ -1,0 +1,19 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Leaderboard</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<% if (username === "nelson") { %>
+		<style>
+			body {background-image: url(Nelson_Einstein.png); background-size: 20%}
+		</style>
+		<% } %>
+	</head>
+	<body>
+		<h1>Leaderboard</h1>
+		<%- table %>
+		<input type="button" onclick="location.href='/';" value="Return to Game Home"/>
+	</body>
+</html>

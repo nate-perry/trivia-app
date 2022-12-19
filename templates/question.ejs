@@ -1,0 +1,41 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Question</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body>
+	<h1>Trivia Question</h1>
+
+	<p><%- question %></p>
+	<form action="/answer" method="post">
+		<input type="submit" name="selected" value="<%- answers[0] %>" >
+	</form> 
+
+	<form action="/answer" method="post">
+		<input type="submit" name="selected" value="<%- answers[1] %>">
+	</form> 
+	
+	<% if (locals.answers[2]) { %>
+
+		<form action="/answer" method="post">
+			<input type="submit" name="selected" value="<%- answers[2] %>">
+		</form> 
+	   
+	<% } %>
+
+	<% if (locals.answers[3]) { %>
+
+		<form action="/answer" method="post">
+			<input type="submit" name="selected" value="<%- answers[3] %>">
+		</form> 
+	   
+	<% } %>
+
+</body>
+
+</html>

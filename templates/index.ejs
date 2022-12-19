@@ -1,0 +1,21 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Trivia Quiz</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+	<h1>Trivia Quiz</h1>
+
+	<form action="/" method="post">
+		<label for="username">Please enter your username:</label><br>
+		<input type="text" id="username" name="username" value="<%- username %>"><br>
+
+		<input type="submit" value="Start Game">
+	</form>
+	<input type="button" onclick="location.href='/leaderboard';" value="View Leaderboard"/>
+
+</body>
+</html>

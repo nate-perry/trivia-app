@@ -1,0 +1,24 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title><%- (correct ? "Correct Answer" : "Game Over") %></title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body>
+	<% if (correct) { %>
+		<h1>Correct Answer!</h1>
+		<p><%- correct_answer %> is the correct answer! Your new score is <%- current_score %></p>
+		<input type="button" onclick="location.href='/question';" value="Next Question"/>
+	<% } else { %>
+		<h1>Incorrect Answer!</h1>
+		<p>Sorry, "<%- selected %>" is wrong - the correct answer is <%- correct_answer %>. Your final score is <%- current_score %></p>
+		<input type="button" onclick="location.href='/';" value="Try Again"/>
+		<input type="button" onclick="location.href='/leaderboard';" value="View Leaderboard"/>
+	<% } %>
+</body>
+
+</html>
