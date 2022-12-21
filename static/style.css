@@ -1,5 +1,11 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+
+
 body {
-    background-color: blanchedalmond;
+    font-family: "Lato", sans-serif;
+
+    background-color: white;
     font-size: 30px;
     max-width: 500px;
     margin: auto;
@@ -7,8 +13,9 @@ body {
 }
 
 table {
+    font-family: "Lato", sans-serif;
     text-align: center;
-    border-color: #205C37;
+    border-color: #1C3144;
     padding: 10px 0px;
     margin: 10px 0px;
     width: 100%
@@ -16,32 +23,38 @@ table {
 }
   
 th {
-    background-color: #205C37;
+    font-family: "Lato", sans-serif;
+
+    background-color: #1C3144;
     color: white;
     border-radius: 0px;
     font-size: 25px;
     padding: 10px 10px;
-    border: #205C37;
+    border: #1C3144;
     border-style: solid;
 
 }
 
 td {
+    font-family: "Lato", sans-serif;
+
     background-color: white;
     border-radius: 0px;
-    border: #205C37;
+    border: #1C3144;
     font-size: 25px;
     padding: 10px 10px; 
 }
 
 thead th {
+    font-family: "Lato", sans-serif;
+
     background-color: black;
 }
 
 
 
 input[type=button], input[type=submit] {
-  background-color: #205C37;
+  background-color: #1C3144;
   border-radius: 8px;
   color: white;
   font-size: 25px;
@@ -51,7 +64,7 @@ input[type=button], input[type=submit] {
 }
 
 input[type=button]:hover, input[type=submit]:hover {
-  background-color: #3A754E;
+  background-color: #3e6b93;
 }
 
 input[type=text] {
@@ -63,5 +76,13 @@ input[type=text] {
 }
 
 input {
+    font-family: "Lato", sans-serif;
+
     width: 100%
+}
+
+
+
+.container {
+    /* padding-top: 5rem; */
 }
