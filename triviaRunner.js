@@ -15,9 +15,6 @@ const uri = `mongodb+srv://${process.env.MONGO_DB_USERNAME}:${process.env.MONGO_
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 
-// const uri = `mongodb+srv://${userName}:${password}@cluster0.jpdhi8g.mongodb.net/?retryWrites=true&w=majority`
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-
 app.set("views", "templates");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:false})); 
@@ -111,5 +108,10 @@ app.get("/leaderboard", async (request, response) => {
 
   response.render("leaderboard", {table: table, username: username});
 });
+
+
+// app.get("/nrperry", async (request, response) => {
+//   response.redirect("https://nrperry.com");
+// });
 
 app.listen(port);
