@@ -7,19 +7,20 @@
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
+
 	<h1>Trivia Quiz</h1>
 
 	<form action="/" method="post">
 		<label for="username">Please enter your username:</label><br>
 		<input type="text" id="username" name="username" value="<%- username %>"><br>
-
 		<input type="submit" value="Start Game">
 	</form>
 	<input type="button" onclick="location.href='/leaderboard';" value="View Leaderboard"/>
-
-		
-	<a href="www.nrperry.com">home</a>
-
+	
+	<div class="container">
+		<input type="button" onclick="location.href='https://www.nrperry.com';" value="Home: nrperry.com"/>
+	</div>
 
 </body>
+
 </html>

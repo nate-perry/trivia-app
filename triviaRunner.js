@@ -109,9 +109,4 @@ app.get("/leaderboard", async (request, response) => {
   response.render("leaderboard", {table: table, username: username});
 });
 
-
-// app.get("/nrperry", async (request, response) => {
-//   response.redirect("https://nrperry.com");
-// });
-
 app.listen(port);
